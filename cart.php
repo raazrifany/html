@@ -1,25 +1,3 @@
-<?php
-session_start();
-
-if (!isset($_SESSION['cart'])) {
-    $_SESSION['cart'] = array();
-}
-
-if (isset($_GET['product_id']) && isset($_GET['product_name']) && isset($_GET['product_price'])) {
-    $product_id = $_GET['product_id'];
-    $product_name = urldecode($_GET['product_name']);
-    $product_price = $_GET['product_price'];
-
-    $cart_item = array(
-        'product_id' => $product_id,
-        'product_name' => $product_name,
-        'product_price' => $product_price,
-        'quantity' => 1 // Default quantity
-    );
-
-    array_push($_SESSION['cart'], $cart_item);
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
