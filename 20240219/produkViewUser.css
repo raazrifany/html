@@ -1,0 +1,261 @@
+body{
+    background-color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+footer{
+    background-color: #efeeee;
+    font-size: 11pt;
+    padding: 10px;
+}
+
+hr{
+    color: #dad9d9;
+    width: 100%;
+}
+
+footer a{
+	text-decoration: none;
+    color: black;
+}
+
+.footer-left, .footer-right{
+    height: 115.73px;
+}
+
+.footer-right table{
+    margin-top: 15px;
+}
+
+.navbar{
+	overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 20px rgba(78, 71, 71, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    width: 100%;
+}
+
+.navbar img{
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+    margin-top: 10px;
+    float: left;
+}
+
+.navbar a{
+	float: left;
+	color: black; /* warna tulisan */
+	text-decoration: none;
+	text-align: center;
+	padding: 10px 10px;
+	font-size: 18;
+  margin: 5px;
+}
+
+.navbar a:hover{
+	color: #508952;
+}
+
+.navbar a.active {
+	color: #508952;
+    background-color: #e9f1e9;
+}
+
+.navbar ul {
+    position: fixed;
+    top: 0;
+}
+
+.navbar .img-menu img{
+    width: 35px;
+    height: 35px;
+    float: right;
+    margin-top: 0px;
+    margin-left: -15px;
+}
+
+.container-search {
+    float: left;
+    margin: 10px;
+}
+
+.container-search form {
+    display: flex;
+}
+
+.container-search input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 50px 0 0 50px;
+    outline: none;
+}
+
+.search-button {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 0 50px 50px 0;
+    cursor: pointer;
+    width: 38px; /* Mengurangi lebar tombol */
+    height: 38px; /* Mengurangi tinggi tombol */
+}
+
+.search-button img {
+    width: 20px; /* Mengurangi lebar gambar di dalam tombol */
+    height: 20px; /* Mengurangi tinggi gambar di dalam tombol */
+    margin: 0;
+}
+
+.container-search input[type="text"],
+.search-button {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 50px;
+  }
+
+  .main #myBtnContainer{
+    float: left;
+    width: 83%;
+  }
+
+  .main #add-btn-container{
+    float: right;
+    width: 17%;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 10px -16px;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide all elements by default */
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+	color: #508952;
+    background-color: #e9f1e9;
+  }
+
+  .add-btn{
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #508952;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+    cursor: pointer;
+  }
+
+  .add-btn:hover{
+    color: #ffffff;
+    background-color: #2d5e2e;
+  }
+  
+  .add-to-cart-btn{
+    border: 2px solid #508952;
+    border-radius: 50px;
+    outline: 0;
+    padding: 12px;
+    color: #508952;
+    background-color:white;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .product-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .price{
+      color: grey;
+  }
+  
+  .column img {
+      height: 300px; /* Sesuaikan tinggi sesuai kebutuhan */
+      object-fit: cover; /* Hindari distorsi gambar */
+  }
+
+  .content button.add-to-cart{
+      background-color: #45a049;
+      color: white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+      border-radius: 50px;
+      cursor: pointer;
+      outline: 0;
+      border: none;
+      padding: 10px 105px;
+      text-decoration: none; /* Tambahkan properti ini */
+      font-size: 18px;
+  }
+
+.content button:hover {
+    color: #ffffff;
+    background-color: #2d5e2e;
+}
